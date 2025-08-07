@@ -1,0 +1,10 @@
+fastapi
+uvicorn
+pdfminer.six
+python-docx
+openai
+pinecone
+langchain
+tiktoken
+python-multipart
+sentence_transformers
