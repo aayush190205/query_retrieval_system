@@ -9,7 +9,7 @@ load_dotenv()
 model = SentenceTransformer("all-MiniLM-L6-v2")
 
 pinecone_api_key = os.getenv("PINECONE_API_KEY")
-pinecone_index = os.getenv("PINECONE_INDEX")
+pinecone_index = os.getenv("PINECONE_INDEX_NAME")
 
 pc = Pinecone(api_key=pinecone_api_key)
 index = pc.Index(pinecone_index)
