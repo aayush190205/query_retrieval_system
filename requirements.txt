@@ -8,3 +8,4 @@ pinecone
 langchain
 tiktoken
 python-multipart
+sentence-transformers
