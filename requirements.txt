@@ -4,4 +4,5 @@ python-multipart
 requests
 python-dotenv
 sentence-transformers
+pdfminer.six
 pinecone-client
