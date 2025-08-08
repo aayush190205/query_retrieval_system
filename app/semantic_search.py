@@ -1,21 +1,16 @@
 import os
 from sentence_transformers import SentenceTransformer
 from pinecone import Pinecone
-from nltk.tokenize import sent_tokenize
 from dotenv import load_dotenv
 
 # Load environment variables
 load_dotenv()
 
-# Load embedding model
 model = SentenceTransformer("all-MiniLM-L6-v2")
 
-# Load Pinecone credentials
 pinecone_api_key = os.getenv("PINECONE_API_KEY")
 pinecone_index = os.getenv("PINECONE_INDEX")
-pinecone_region = os.getenv("PINECONE_REGION")
 
-# Initialize Pinecone client
 pc = Pinecone(api_key=pinecone_api_key)
 index = pc.Index(pinecone_index)
 
