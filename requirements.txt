@@ -1,8 +1,7 @@
-fastapi
-uvicorn
-python-multipart
-requests
-python-dotenv
-sentence-transformers
-pdfminer.six
-pinecone-client
+sentence-transformers==2.5.1
+onnxruntime==1.17.3
+pinecone-client==3.0.1
+fastapi==0.111.0
+uvicorn==0.29.0
+requests==2.31.0
+python-dotenv==1.0.1
